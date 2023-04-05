@@ -8,8 +8,8 @@
 import UIKit
 
 class ViewController: UIViewController {
-    var ime: String? = "Sus"
-    let prezime: String = "Susing"
+    var ime: String? = "John"
+    let prezime: String = "Wick"
     
     
     @IBOutlet weak var DisplayLabel: UILabel!
@@ -31,9 +31,9 @@ class ViewController: UIViewController {
         let rezultat = spojiImePrezime(i: ime!, p: prezime)
         print(rezultat)
         
-        fIrstTextField.placeholder="Unesi neki tekst..."
+        fIrstTextField.placeholder="Unesite tekst..."
         DisplayLabel.text=rezultat
-        prezimeTextField.placeholder="Unesi prezime..."
+        prezimeTextField.placeholder="Unesite prezime..."
     }
     
     func spojiImePrezime(i:String, p:String) -> String {
